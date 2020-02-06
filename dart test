@@ -1,0 +1,25 @@
+//import 'dart:html';
+
+void main() {
+  int nota = 8;
+
+  if (nota > 7) {
+    print("Aprovado!");
+  } else {
+    print("Reprovou");
+  }
+  
+  print("Fim do programa.");
+  
+  
+  bool Aprovado = false;
+  String info;
+  
+  info = Aprovado ? "Aprovado " : "Reprovado...";
+  print (info);
+
+
+  String nome ;
+  String info2 = nome ?? "Nome não informado";
+  print (info2);
+}
