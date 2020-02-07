@@ -1,0 +1,30 @@
+class pessoa {
+  String nome;
+  int idade;
+  double altura;
+  
+  void dormir(){
+    print("$nome esta dormindo.");
+  }
+  
+  void aniversario(){
+    idade++;
+  }
+}
+
+void main() {
+  
+  pessoa pessoa1 = new pessoa();
+  
+  pessoa1.nome = "Alisson";
+  pessoa1.idade = 21;
+  pessoa1.altura = 1.69;
+  
+  print(pessoa1.idade);
+  pessoa1.aniversario();
+  print(pessoa1.idade);
+  
+  
+  pessoa1.dormir();
+    
+}
