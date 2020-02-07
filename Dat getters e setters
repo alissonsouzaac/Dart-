@@ -1,0 +1,55 @@
+class pessoa {
+  String nome;
+  int _idade;
+  double _altura;
+  /*
+  pessoa(String nome, int idade, double altura){
+    this,nome = nome;
+    this,idade = idade;
+    this,altura = altura;
+  }
+  */
+  pessoa (this.nome, this._idade, this._altura);
+  
+  void dormir(){
+    print("$nome esta dormindo.");
+  }
+  
+  void aniversario(){
+    _idade++;
+  }
+  
+  int get idade {
+    return _idade;
+  }
+  double get altura{
+    return _altura;
+  }
+  
+  set altura(double altura){
+    if(altura> 0 && altura < 3.0){
+      _altura = altura;
+    }
+    else{
+     _altura = 0.0;
+    }
+  }
+}
+
+void main() {
+  
+  pessoa pessoa1 = new pessoa("Alisson",21,0);
+  /*
+  pessoa1.nome = "Alisson";
+  pessoa1.idade = 21;
+  pessoa1.altura = 1.69;
+  */
+  print(pessoa1.idade);
+  pessoa1.aniversario();
+  print(pessoa1.idade);
+  
+  
+  pessoa1.dormir();
+  pessoa1.altura = 1.65;
+  print(pessoa1.altura );
+}
