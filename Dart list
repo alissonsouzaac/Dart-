@@ -1,0 +1,38 @@
+class Pessoa{
+  
+  String nome;
+  int idade;
+  
+  Pessoa(this.nome, this.idade);
+}
+
+void main() {
+  
+  List<String> nomes = ["Alisson", "Daniel", "Thiago"];
+  
+  print(nomes[0]);
+  
+  print(nomes.length);
+  
+  nomes.removeAt(2);
+  
+  print(nomes.length);
+  
+  print(nomes);
+  
+  nomes.insert(1,"Thiago");
+  
+  print(nomes);
+  
+  print(nomes.contains("Alisson"));
+  print(nomes.contains("Alemão"));
+  
+  List<Pessoa> pessoas = List();
+  pessoas.add(Pessoa("Brtt", 28));
+  pessoas.add(Pessoa("Magali", 30));
+  
+  for (Pessoa p in pessoas){
+    print(p.nome);
+  }
+  
+}
