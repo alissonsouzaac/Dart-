@@ -1,0 +1,30 @@
+class infoPessoa {
+  int idade;
+  
+  infoPessoa(this.idade);
+}
+
+void main(){
+  
+  Map<int, String> DDDS = Map();
+  
+  DDDS[5] = "Pedras de Fogo";
+  DDDS[8] = "Itambé";
+  print(DDDS);
+  print(DDDS.keys);
+  print(DDDS.values);
+  
+  DDDS.remove(5);
+  
+  Map< String , dynamic> Pessoa = Map();
+  
+  Pessoa["Nome"] = "Alisson";
+  Pessoa["Idade"] = 21;
+  Pessoa["Altura"] = 1.69;  
+  
+  Map<String, infoPessoa> Pessoas = Map();
+  
+  Pessoa["Brtt"] = infoPessoa(30);
+  Pessoa["Magali"] = infoPessoa(25);
+  
+}
